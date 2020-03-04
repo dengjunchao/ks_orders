@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>快手订单管理系统</title>
+    <script src="/static/jquery-3.3.1.js"></script>
+    <style>
+        td {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body style="margin-left:700px;margin-top: 200px">
+<h1 style="margin-left:100px">快手后台订单系统</h1>
+<p id = "p1" style="margin-left:800px"></p>
+<br>
+
+<form id="uploadForm">
+    批量订单上传:
+    <input type="file" name="file" id="file" style="width:180px;">
+    <button type="button" onclick="batch_video()">提交</button>
+</form>
+
+<br>
+<br>
+<form id="orders_form">
+    订单id号:
+    <input type="text" id="insert_video_id" placeholder="请输入订单id" size="20" name="orders_id"/>
+
+    类型:
+    <select id="insert_video" name="insert_video_type" onchange="display_start_number()">
+           
+        <option value="1"> 点赞</option>
+           
+        <option value="2"> 关注</option>
+           
+        <option value="3"> 评论</option>
+           
+        <option value="4">播放量</option>
+
+        <option value="5">评论赞</option>
+    </select>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;数量：
+    <input id="video_num" type="number" placeholder="请输入整数" style="width:100px;" name="orders_counts"
+           onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+
+
+    <label id = "comment_label" style="display: none">&nbsp;&nbsp;&nbsp;&nbsp;说说/条:</label>
+    <input id="comment_rows" type="number" placeholder="请输入说说条数" style="width:120px;display: none" name="comment_counts"
+     onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+
+
+    <button type="button" onclick="ajaxForm_video()">提交</button>
+</form>
+<br>
+<br>
+<form id="order_unsubscribe">
+    订单退订:
+    <input type="text" οnkeyup="value=value.replace(/[^\w\.\/]/ig,'')" placeholder="请输入订单id" name="order_id"/>
+    类型:
+    <select id="order_unsubscribe_id" name="order_unsubscribe_type" autofocus>
+           
+        <option value="1" selected> 点赞</option>
+           
+        <option value="2"> 关注</option>
+           
+        <option value="3"> 评论</option>
+           
+        <option value="4">播放量</option>
+
+        <option value="5">评论赞</option>
+    </select>
+    <button type="button" onclick="order_unsubscribe()">发送</button>
+</form>
+
+
+<br>
+<br>
+<form id="query_form">
+    查询订单:
+    <input type="text" placeholder="请输入订单id或视频id" id="query_video"/>
+
+    <button type="button" onclick="query_order()">发送</button>
+</form>
+
+<br>
+<br>
+<div class="div_one" style="margin-left: -450px;">
+    <table id="tema" border="1" rules="all" width="1500">
+        <tr>
+            <th>订单id</th>
+            <th>订单数量</th>
+            <th>订单类型</th>
+            <th>开始数量</th>
+            <th>当前计数</th>
+            <th>订单状态</th>
+            <th>视频名字</th>
+            <th>视频id号</th>
+            <th>用户id号</th>
+            <th>评论赞id号</th>
+            <th>订单时间</th>
+            <th>退单状态</th>
+        </tr>
+
+    </table>
+
+</div>
+</body>
+
+
+<script>
+
+    function ajaxForm_video() {
+        //订单提交
+        var form= new FormData(document.getElementById("orders_form"));
+
+        $.ajax({
+            url: "/",
+            type: "post",
+            data: form,
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if (data.status == 200) {
+                    alert("上传成功");
+                } else {
+                    alert(data.msg);
+                }
+                location.reload();
+            }
+        })
+    }
+
+    function order_unsubscribe() {
+        //订单退订
+        //获取数据
+        var form = new FormData(document.getElementById("order_unsubscribe"));
+
+
+        //异步提交数据
+        $.ajax({
+            url: "/",
+            type: "put",
+            data: form,
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if (data.status == 200) {
+                    alert("退订成功");
+                } else {
+                    alert("退订失败");
+                }
+                location.reload();
+            }
+        })
+    }
+
+    function batch_video() {
+        //批量上传
+        //获取数据
+        var formData = new FormData($("#uploadForm")[0]);
+
+        //异步提交数据
+        $.ajax({
+            url: "/ks/",
+            type: "patch",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if (data.status == 200) {
+                    alert(data.msg);
+                } else {
+                    alert(data.msg);
+                }
+                location.reload();
+            }
+        })
+    }
+
+
+    function query_order() {
+        // 获取方法
+        let nums = 0;
+        let $box2 = "";
+        let orders_id = document.getElementById("query_video").value;
+
+
+        {#query_video_id#}
+        //异步提交数据
+        $.ajax({
+            url: "/",
+            type: "options",
+            data: JSON.stringify({
+                "orders_id": orders_id
+            }),
+            contentType: "application/json",
+            success: function (data) {
+                if (data.status == 200) {
+                    //清空数据
+                    delete_user();
+                    document.getElementById("query_video").value = "";
+                    //延迟加载数据
+                    setTimeout(get_list_data(data), 500);
+                } else {
+                    alert("查询失败")
+                }
+
+            }
+        })
+    }
+
+    //获取列表数据
+    function get_list_data(data) {
+
+        let len1 = data.data.length;
+
+        for (let i = 0; i < len1; i++) {
+            //id
+            let id = "<td >" + (data.data[i]["_id"]) + "</td>";
+            //订单数量
+            let counts = "<td >" + (data.data[i]["orders_counts"]) + "</td>";
+            //开始数量
+            let start_num = "<td >" + (data.data[i]["start_number"]) + "</td>";
+            //当前数量
+            let now_num = "<td >" + (data.data[i]["now_number"]) + "</td>";
+            //订单类型
+            let order_type = "<td >" + (data.data[i]["orders_type"]) + "</td>";
+
+            //视频名字
+            let photo_name = "<td >" + (data.data[i]["photo_name"]) + "</td>";
+            //视频id
+            let item_id = "<td >" + (data.data[i]["photo_id"]) + "</td>";
+
+            //用户id
+            let user_id = "<td >" + (data.data[i]["user_id"]) + "</td>";
+            //评论赞id
+            let comment_id = "<td >" + (data.data[i]["comment_id"]) + "</td>";
+
+
+            //订单时间
+            let order_date = "<td >" + (data.data[i]["orders_date"]) + "</td>";
+            //订单状态
+            let order_state = "<td >" + (data.data[i]["orders_state"]) + "</td>";
+            //退单状态
+            let sign = "<td >" + (data.data[i]["sign"]) + "</td>";
+
+            let nid = "n" + (i) + "";
+
+            let $box2 = "<tr id=\"" + (nid) + "\">" + id + counts + order_type + start_num + now_num + order_state + photo_name +item_id +user_id+comment_id+ order_date + sign + "</tr>";
+            $('#tema').append($box2);
+
+        }
+    }
+
+    //根据id 删除标签
+    function delete_user() {
+        let len = 1000;
+        for (let i = 0; i < len; i++) {
+
+            $("#n" + i).remove();
+        }
+    }
+
+    function add_document() {
+        let local = window.location.host;
+        let local_api ="http://"+local+"/api_document";
+        let local_explain ="http://"+local+"/explain";
+
+        let $a1 = "<a href="+local_explain+">"+"使用说明"+"</a>";
+        let $a2 = "<a href="+local_api+">"+"api接口"+"</a>";
+
+        $('#p1').append($a1);
+        $('#p1').append($a2);
+
+    }
+
+
+
+    function display_start_number(){
+        let myselect = document.getElementById("insert_video").value;
+
+        if (myselect == 5){
+
+            $('#comment_rows').css('display', 'inline');
+            $('#comment_label').css('display', 'inline');
+
+        }else {
+
+             $('#comment_rows').css('display', 'none');
+             $('#comment_label').css('display', 'none');
+         }
+    }
+    add_document()
+
+</script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+
+    <title>使用说明文档</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1 style="margin-left: 20px;">使用说明</h1>
+
+    <div style="margin-left: 20px;margin-top: 20px;margin-right: 20px" class="jumbotron">
+
+              <h3>批量上传功能</h3>
+              <pre><code>
+            字段说明：
+            video_type  #视频类型
+            count       #点击数量
+            video_data  #视频数据
+
+            格式说明:上传文件，文件格式编码utf-8
+            ps:如何查看格式，txt另存为，底部编码格式
+
+            txt文档内容示例：
+            {"orders_type":"4","orders_counts":"1020","orders_id":"3xrnrgge92ra5ry"}
+            {"orders_type":"4","orders_counts":"1040","orders_id":"3xp9m9dzfqfwx7c"}
+
+            全部成功提示：上传成功
+            失败会提示：  视频名字和错误信息
+              </code></pre>
+    </div>
+
+    <br>
+    <div class="jumbotron" style="margin-left: 20px;margin-top: 10px;margin-right: 20px">
+      <h3>单视频上传</h3>
+        <pre><code>格式类型示例：
+
+            视频名字:
+            3x3mu65sh4ww3q2
+
+            类型支持四种:1.点赞 2.关注 3.评论 4.播放量 5.评论赞
+
+            数量：必须填写是整数
+        </code></pre>
+    </div>
+
+    <div class="jumbotron" style="margin-left: 20px;margin-top: 10px;margin-right: 20px">
+      <h3>订单退订</h3>
+        <pre><code>
+            只能支持：订单id
+            示例：5d6a505127baa32ca47819fa
+
+            类型支持四种:
+            1.点赞 2.关注 3.评论 4.播放量
+        </code></pre>
+    </div>
+
+    <div class="jumbotron" style="margin-left: 20px;margin-top: 10px;margin-right: 20px">
+      <h3>查询订单</h3>
+        <pre><code>
+            查询支持：订单id、视频id、视频名字,用户id
+
+            示例:
+            订单id:5d6a505127baa32ca47819fa
+            视频id:6682288640300764420
+            视频名字:3xgwsrvrp7nsy34
+
+        </code></pre>
+    </div>
+
+    </body>
+<script src="/static/jquery-3.3.1.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</html>

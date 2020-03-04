@@ -1,0 +1,216 @@
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:33:00] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:39:05] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:44:31] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:46:13] "GET /explain/get_something HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:50:23] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:52:17] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:52:52] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:56:00] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 13:57:22] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:07:11] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:10:31] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:13:27] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:14:37] "GET /docs/api/ HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:14:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:15:04] "GET /explain/get_something HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:21:49] "GET /docs/api/ HTTP/1.1" 404 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:21:51] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:21:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 14:22:25] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:07:45] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:07:59] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:08:16] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:09:25] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:15:13] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:20:27] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:21:33] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:24:44] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 16:25:05] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 20:55:55] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 20:56:01] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 21:09:54] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [08/Sep/2019 21:09:56] "GET /explain HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [10/Sep/2019 11:54:30] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [10/Sep/2019 11:54:30] "GET /static/jquery-3.3.1.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [10/Sep/2019 11:54:30] "GET /favicon.ico HTTP/1.1" 404 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [10/Sep/2019 19:05:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:35:12] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:35:12] "GET /static/jquery-3.3.1.js HTTP/1.1" 304 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:35:42] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:37:39] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:37:43] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:39:04] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:39:27] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:39:30] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:39:47] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 10:40:21] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 11:43:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 11:43:49] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 11:43:52] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 11:44:06] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 11:44:13] "OPTIONS / HTTP/1.1" 200 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 14:17:00] "GET / HTTP/1.1" 200 -
+ERROR app.py:1891 Exception on / [OPTIONS]
+Traceback (most recent call last):
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 163, in dispatch_request
+    return meth(*args, **kwargs)
+  File "G:\Ky_omm\ky_omm\view\index.py", line 182, in options
+    query_result = QueryOrder(video_type, video_id).query_order()
+  File "G:\Ky_omm\ky_omm\common\query_order.py", line 68, in query_order
+    Conversion.data_conversion(json_result)
+  File "G:\Ky_omm\ky_omm\common\conversion.py", line 16, in data_conversion
+    time_stamp = self.data.get('order_date', None)
+AttributeError: 'dict' object has no attribute 'data'
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 14:17:08] "OPTIONS / HTTP/1.1" 500 -
+ERROR app.py:1891 Exception on / [OPTIONS]
+Traceback (most recent call last):
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 163, in dispatch_request
+    return meth(*args, **kwargs)
+  File "G:\Ky_omm\ky_omm\view\index.py", line 182, in options
+    query_result = QueryOrder(video_type, video_id).query_order()
+  File "G:\Ky_omm\ky_omm\common\query_order.py", line 68, in query_order
+    Conversion.data_conversion(json_result)
+  File "G:\Ky_omm\ky_omm\common\conversion.py", line 16, in data_conversion
+    time_stamp = self.data.get('order_date', None)
+AttributeError: 'dict' object has no attribute 'data'
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 14:17:10] "OPTIONS / HTTP/1.1" 500 -
+ERROR app.py:1891 Exception on / [OPTIONS]
+Traceback (most recent call last):
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 163, in dispatch_request
+    return meth(*args, **kwargs)
+  File "G:\Ky_omm\ky_omm\view\index.py", line 182, in options
+    query_result = QueryOrder(video_type, video_id).query_order()
+  File "G:\Ky_omm\ky_omm\common\query_order.py", line 68, in query_order
+    Conversion.data_conversion(json_result)
+  File "G:\Ky_omm\ky_omm\common\conversion.py", line 16, in data_conversion
+    time_stamp = self.data.get('order_date', None)
+AttributeError: 'dict' object has no attribute 'data'
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 14:17:11] "OPTIONS / HTTP/1.1" 500 -
+ERROR app.py:1891 Exception on / [OPTIONS]
+Traceback (most recent call last):
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 163, in dispatch_request
+    return meth(*args, **kwargs)
+  File "G:\Ky_omm\ky_omm\view\index.py", line 182, in options
+    query_result = QueryOrder(video_type, video_id).query_order()
+  File "G:\Ky_omm\ky_omm\common\query_order.py", line 68, in query_order
+    Conversion.data_conversion(json_result)
+  File "G:\Ky_omm\ky_omm\common\conversion.py", line 16, in data_conversion
+    time_stamp = self.data.get('order_date', None)
+AttributeError: 'dict' object has no attribute 'data'
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 14:17:11] "OPTIONS / HTTP/1.1" 500 -
+ERROR app.py:1891 Exception on / [OPTIONS]
+Traceback (most recent call last):
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\djc\Envs\flask\lib\site-packages\flask\views.py", line 163, in dispatch_request
+    return meth(*args, **kwargs)
+  File "G:\Ky_omm\ky_omm\view\index.py", line 182, in options
+    query_result = QueryOrder(video_type, video_id).query_order()
+  File "G:\Ky_omm\ky_omm\common\query_order.py", line 68, in query_order
+    Conversion.data_conversion(json_result)
+  File "G:\Ky_omm\ky_omm\common\conversion.py", line 16, in data_conversion
+    time_stamp = self.data.get('order_date', None)
+AttributeError: 'dict' object has no attribute 'data'
+INFO _internal.py:122 127.0.0.1 - - [11/Sep/2019 14:17:11] "OPTIONS / HTTP/1.1" 500 -
+INFO _internal.py:122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

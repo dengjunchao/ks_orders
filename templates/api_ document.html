@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+
+    <title>api文档</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1 style="margin-left: 20px;">api文档使用说明</h1>
+    <br>
+    <div class="jumbotron" style="margin-left: 20px;margin-top: 10px;margin-right: 20px">
+      备注：ip出现变动了因为不是公网ip，百度"ip",然后替换ip地址即可。
+      <h3>添加订单</h3>
+        <pre><code>
+            orders_id      视频id号
+            orders_type    类型支持四种:1.点赞 2.关注 3.评论 4.播放量 5.评论赞
+            orders_counts  数量
+
+            请求路径：http://192.168.100.2:12700/ks/add_order    请求方式：POST
+
+            示例数据json  1.点赞 2.关注 3.评论 4.播放量
+            {
+                "orders_type":"1",
+                "orders_id":"3x7zjkxmwspmvt4",
+                "orders_counts":"120"
+            }
+
+            5.评论赞  数据类型
+            {
+                "orders_type":"5",
+                "orders_id":"3x7zjkxmwspmvt4",
+                "orders_counts":"120",
+                "comment_counts":1200
+            }
+
+
+            返回json格式
+            orders_id   订单id号
+            start_num  开始数量
+            status     状态200成功
+            {
+                "order_id": "5d835d0a27baa30618f9bc9e",
+                "start_number": 260,
+                "status": 200
+            }
+
+        </code></pre>
+    </div>
+
+
+    <div class="jumbotron" style="margin-left: 20px;margin-top: 10px;margin-right: 20px">
+      <h3>订单退订</h3>
+        <pre><code>
+            字段：video_id  订单id号（只能支持订单id格式类型）  示例:5d800e5a679a8c00f362c934
+            字段：video_type  类型支持四种:1.点赞 2.关注 3.评论 4.播放量
+
+            请求路径：http://192.168.100.2:12700/ks/back_order    请求方式：POST
+            示例数据json：
+            {
+                "orders_type":"1",
+                "orders_id":"5dba5f5527baa358c85f57ec"
+            }
+            msg:数量
+            返回json格式：
+            {
+                "msg": 125,
+                "status": 200
+            }
+        </code></pre>
+    </div>
+
+    <div class="jumbotron" style="margin-left: 20px;margin-top: 10px;margin-right: 20px">
+      <h3>查询订单</h3>
+        <pre><code>
+            字段：orders_id  订单id号（支持三种方式订单id和视频id格式类型）
+            字段：orders_type  类型支持四种:1.点赞 2.关注 3.评论 4.播放量
+
+            注意:订单id和视频名字只会返回一条数据，视频id最少返回一条数据或者多条数据
+
+            请求路径：http://192.168.100.2:12700/ks/query_order    请求方式：POST
+            示例数据json:
+            {
+                "orders_id":"6737581246638984455"
+            }
+
+            返回json格式
+            {
+                "status": 200,
+                "data": [
+                    {
+                        "_id": "5dba5f5527baa358c85f57ec",
+                        "orders_type": "点赞",
+                        "user_id": "425814433",
+                        "user_name": "《等待中》…",
+                        "photo_name": "3x7zjkxmwspmvt4",
+                        "photo_id": "5254856359641751091",
+                        "comment_id": "",
+                        "comment_rows": 0,
+                        "orders_date": "2019-10-31 12:13:09",
+                        "start_number": 0,
+                        "now_number": 0,
+                        "orders_state": "未开始",
+                        "work_status": 0,
+                        "sign": "操作完成",
+                        "robots_number": 0,
+                        "orders_counts": 120
+                    }
+                ]
+            }
+        </code></pre>
+    </div>
+
+    </body>
+<script src="/static/jquery-3.3.1.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</html>
